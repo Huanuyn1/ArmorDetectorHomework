@@ -16,8 +16,6 @@
 
 ## 建议目录结构
 
-## 建议目录结构
-
 ```bash
 ./
 ├── CMakeLists.txt
@@ -38,7 +36,6 @@
 └── build/
     └── armor_detector
 ```
-
 
 
 ## 注意事项
