@@ -1,6 +1,9 @@
 build/
 
-.DS_store
+.DS_Store
 #macOS别在我目录里拉屎了…
 
 test/
+
+.cache/
+compile_commands.json
