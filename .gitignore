@@ -1,4 +1,6 @@
 build/
+/armor_video
+/armor_detector
 
 .DS_Store
 #macOS别在我目录里拉屎了…

@@ -5,7 +5,10 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
-find_package(OpenCV REQUIRED COMPONENTS core imgproc imgcodecs geometry videoio)
+find_package(OpenCV REQUIRED COMPONENTS core imgproc imgcodecs videoio)
+if(OpenCV_VERSION VERSION_GREATER_EQUAL 5.0)
+    find_package(OpenCV REQUIRED COMPONENTS core imgproc imgcodecs videoio geometry)
+endif()
 
 add_executable(armor_detector main.cpp armor_detector.cpp)
 target_link_libraries(armor_detector PRIVATE ${OpenCV_LIBS})
